@@ -49,6 +49,11 @@ Searching Algorithms-  Linear and Binary Search
 
 The system is ultimately used to improve municipal service accountability and ensure that citizens keep track of repairs by supporting proactive infrastructure maintenance.
 
+#### Note:
+
+During development, the newline character (\n) was used for line breaks instead of std::endl. While \n is generally faster for console output (since it avoids flushing the output buffer), using std::endl would have been more effective for user interaction because it immediately flushes the output to the console. Some of the program’s output might not appear instantly in certain environments until a buffer flush occurs (e.g., after user input). This was an oversight on made throughout the code.
+
+
 
 ## Technology:
 
