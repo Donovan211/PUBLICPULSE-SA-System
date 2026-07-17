@@ -1,62 +1,324 @@
-# PUBLICPULSE-SA-System
+# PublicPulse SA System
 
-Tracking and Maintenance of public infrastructure - Pothole & Road Damage Maintenance Planner
+![C++](https://img.shields.io/badge/C%2B%2B-17-blue.svg)
+![Data Structures](https://img.shields.io/badge/Data%20Structures-Algorithms-success)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Project](https://img.shields.io/badge/Type-Group%20Project-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-## Overview:
+A C++ infrastructure management system designed to simulate how municipalities can efficiently report, track, prioritise, and manage public infrastructure maintenance using fundamental data structures and algorithms.
 
-A C++ program designed to address issues with public infrastructure in South Africa by utilizing Tracking and maintenance feedback, designed to allow citizens to easily report and keep track of repair progress. The system ensures accountability by utilizing data structures to efficiently log, categorize and prioritize repair tasks through real-world problems. Ultimately, it empowers municipalities by preventing further breakdowns by implementing predictive analytics. Since the topic regarding infrustructure is embiguous, the code mainly focuses on pothole and road damage maintanance.
+---
 
-Introduction To Data Structures ( Group Project).
+# Authors
 
-## Key Features:
+**Group Project**
 
-### User Portal
-- Submit fault reports (potholes, cracks, pipe bursts, etc.)
-- Prevent duplicate submissions by checking existing reports
-- View pending and completed report statuses
-- Sort reports by severity using different sorting algorithms:
-  - Bubble Sort
-  - Insertion Sort
-  - Selection Sort
-  - Shell Sort
-- Search reports:
-  - **Linear Search** by Report ID
-  - **Binary Search** by Severity Level
+Developed as part of the **Introduction to Data Structures** module.
 
-### Admin Portal
-- Secure login with password protection
-- Assign repair teams to pending reports
+**Repository maintained by:**  
+**Unathi Spele**
+
+---
+
+# Getting Started
+
+## Prerequisites
+
+Before running the project, ensure you have:
+
+- A C++17 compatible compiler (GCC, Clang, or Microsoft Visual Studio)
+- CMake *(optional if using an IDE)*
+- Any C++ IDE such as:
+  - Visual Studio
+  - Code::Blocks
+  - CLion
+  - VS Code
+
+Verify your compiler installation:
+
+```bash
+g++ --version
+```
+
+---
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/PUBLICPULSE-SA-System.git
+```
+
+Navigate into the project folder:
+
+```bash
+cd PUBLICPULSE-SA-System
+```
+
+---
+
+## Compile
+
+Using g++:
+
+```bash
+g++ *.cpp -o PublicPulse
+```
+
+---
+
+## Run
+
+Windows
+
+```bash
+PublicPulse.exe
+```
+
+Linux/macOS
+
+```bash
+./PublicPulse
+```
+
+---
+
+# Overview
+
+PublicPulse SA System is a C++ application that simulates a municipal infrastructure maintenance platform designed to improve the reporting and management of public infrastructure faults across South Africa.
+
+The project focuses primarily on potholes and road damage as a practical case study while demonstrating how classic data structures and algorithms can be applied to solve real-world service delivery challenges.
+
+Citizens can submit infrastructure reports, monitor repair progress, and avoid duplicate submissions, while administrators can prioritise repairs, assign maintenance teams, analyse infrastructure trends, and manage completed maintenance records.
+
+The primary objective of this project is to demonstrate how software engineering principles and data structures can be applied to improve municipal accountability and infrastructure maintenance.
+
+---
+
+# Features
+
+## Citizen Portal
+
+- Submit infrastructure fault reports
+- Report potholes, road cracks, pipe bursts, and other infrastructure issues
+- Prevent duplicate report submissions
+- View pending reports
+- Track completed repairs
+- Sort reports by severity
+- Search existing reports
+
+---
+
+## Administrator Portal
+
+- Password-protected administrator login
+- Review incoming reports
+- Assign maintenance teams
+- Update repair progress
 - Mark reports as completed
-- View and manage completed repairs (Doubly Linked List)
-- Analyze reports by severity using **Binary Tree Traversals**:
-  - Inorder (Low → High severity)
-  - Preorder
-  - Postorder
-- Search reports from the admin side as well
+- Search reports
+- Analyse completed repairs
+- Generate organised repair records
 
-## Data Structures and Algorithms: (Uses throughout the program)
+---
 
-Arrays-
-Doubly Linked List- Completed repairs tracking 
-Queues- Pending pothole/fault reports
-Stack- undpo functionality ( last assigned reports)
-Binary Search Trees- organizing and analyzing completed reports by severity
-Sorting Algorithms- Bubble, Insertion, Selection, Shell
-Searching Algorithms-  Linear and Binary Search
+# Data Structures & Algorithms
 
+The project demonstrates the practical application of several fundamental data structures and algorithms commonly taught in introductory computer science courses.
 
-## Real World Impact:
+| Data Structure / Algorithm | Purpose |
+|----------------------------|---------|
+| Arrays | Store collections of infrastructure reports |
+| Queue | Manage pending repair requests using FIFO scheduling |
+| Doubly Linked List | Store completed repair records |
+| Stack | Undo recently assigned repair actions |
+| Binary Search Tree | Organise and analyse reports by severity |
+| Bubble Sort | Sort reports by severity |
+| Insertion Sort | Efficient sorting for partially sorted reports |
+| Selection Sort | Demonstrates comparison-based sorting |
+| Shell Sort | Improved sorting performance for larger datasets |
+| Linear Search | Search reports using Report ID |
+| Binary Search | Search reports by severity level |
+| Tree Traversals | Inorder, Preorder and Postorder analysis |
 
-The system is ultimately used to improve municipal service accountability and ensure that citizens keep track of repairs by supporting proactive infrastructure maintenance.
+---
 
-#### Note:
+# System Workflow
 
-During development, the newline character (\n) was used for line breaks instead of std::endl. While \n is generally faster for console output (since it avoids flushing the output buffer), using std::endl would have been more effective for user interaction because it immediately flushes the output to the console. Some of the program’s output might not appear instantly in certain environments until a buffer flush occurs (e.g., after user input). This was an oversight on made throughout the code.
+```
+Citizen
 
+      │
 
+      ▼
 
-## Technology:
+Submit Infrastructure Report
 
-- Language: C++
-- Concepts: Structs, Classes, Recursion, Linked Lists, Queues, Stacks, Trees, Searching & Sorting Algorithms.
+      │
 
+      ▼
+
+Duplicate Report Detection
+
+      │
+
+      ▼
+
+Pending Report Queue
+
+      │
+
+      ▼
+
+Administrator Review
+
+      │
+
+      ▼
+
+Assign Repair Team
+
+      │
+
+      ▼
+
+Repair Completed
+
+      │
+
+      ▼
+
+Completed Repairs List
+
+      │
+
+      ▼
+
+Severity Analysis using BST
+```
+
+---
+
+# Real-World Impact
+
+Public infrastructure plays a critical role in transportation, public safety, and economic development.
+
+PublicPulse SA demonstrates how software systems can improve communication between citizens and municipalities by:
+
+- Encouraging public participation
+- Reducing duplicate reports
+- Prioritising critical repairs
+- Improving service delivery accountability
+- Supporting proactive infrastructure maintenance through organised data management
+
+Although this implementation focuses on potholes and road damage, the underlying architecture could easily be extended to support additional municipal services such as:
+
+- Water leaks
+- Electricity faults
+- Streetlight maintenance
+- Waste collection
+- Drainage issues
+- Sidewalk damage
+
+---
+
+# Technologies Used
+
+| Technology | Purpose |
+|------------|----------|
+| C++ | Core programming language |
+| Object-Oriented Programming | Software design |
+| Structs & Classes | Data modelling |
+| Queues | Pending report management |
+| Stacks | Undo functionality |
+| Doubly Linked Lists | Completed repairs |
+| Binary Search Trees | Severity analysis |
+| Sorting Algorithms | Report prioritisation |
+| Searching Algorithms | Efficient report retrieval |
+
+---
+
+# Learning Outcomes
+
+This project strengthened our understanding of:
+
+- Object-Oriented Programming
+- Dynamic Memory Management
+- Data Structures
+- Searching Algorithms
+- Sorting Algorithms
+- Binary Search Trees
+- Queue Management
+- Linked Lists
+- Tree Traversals
+- Modular Software Design
+- Team Collaboration
+- Problem Solving
+
+---
+
+# Future Improvements
+
+Potential future enhancements include:
+
+- Database integration
+- User authentication
+- GPS location reporting
+- Image uploads for reported faults
+- Interactive map integration
+- Municipal analytics dashboard
+- Email notifications
+- SMS repair updates
+- Mobile application
+- REST API
+- Cloud deployment
+- Machine learning for predictive maintenance
+- Repair scheduling optimisation
+- Real-time reporting statistics
+
+---
+
+# Contributing
+
+This project was developed as an academic group project.
+
+Suggestions and improvements are always welcome.
+
+If you would like to contribute:
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Submit a Pull Request
+
+---
+
+# License
+
+This project is licensed under the MIT License.
+
+You are free to use, modify, and distribute this software provided that the original copyright notice and license are retained.
+
+---
+
+# Repository Maintainer
+
+**Unathi Spele**
+
+BSc Mathematical and Computer Science Student  
+Sol Plaatje University
+
+Interested in:
+
+- Financial Technology (FinTech)
+- Software Engineering
+- Backend Development
+- Data Structures & Algorithms
+- C++ Development
+- Mobile Application Development
+
+---
+
+## Support
+
+If you found this project interesting or useful, consider giving the repository a **Star**.
