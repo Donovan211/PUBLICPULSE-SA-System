@@ -1,12 +1,6 @@
 # PublicPulse SA System
 
-![C++](https://img.shields.io/badge/C%2B%2B-17-blue.svg)
-![Data Structures](https://img.shields.io/badge/Data%20Structures-Algorithms-success)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![Project](https://img.shields.io/badge/Type-Group%20Project-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
-
-A C++ infrastructure management system designed to simulate how municipalities can efficiently report, track, prioritise, and manage public infrastructure maintenance using fundamental data structures and algorithms.
+ C++ infrastructure management system designed to simulate how municipalities can efficiently report, track, prioritise, and manage public infrastructure maintenance using fundamental data structures and algorithms.
 
 ---
 
